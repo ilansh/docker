@@ -255,7 +255,11 @@ To create the `docker` group and add your user:
 
     This ensures your user is running with the correct permissions.
 
-5. Verify your work by running `docker` without `sudo`.
+5. Run the following command to apply group settings.
+
+        $ newgrp docker
+
+6. Verify your work by running `docker` without `sudo`.
 
         $ docker run hello-world
 
